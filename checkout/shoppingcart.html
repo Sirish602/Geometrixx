@@ -13,11 +13,25 @@
     <script>
         var digitalData = digitalData || {};
         digitalData = {
+            event:"cartView",
             page: {
                 pageName: "Checkout:Shopping Cart",
                 siteSection: "Checkout",
                 server: "Geometrixx Clothiers Site"
             },
+            items: [{
+                productID: "200233",
+                productName: "Hooded Sweater"
+            },
+            {
+                productID: "200240",
+                productName: "Corduroy Blazer"
+            },
+            {
+                productID: "100244",
+                productName: "Front-Zip Ski Jacket"
+            },
+        ],
         };
         window.adobeDataLayer = window.adobeDataLayer || [];
         window.adobeDataLayer.push(digitalData);
