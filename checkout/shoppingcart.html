@@ -71,6 +71,44 @@
         @import url(https://ats-sb.adobe.com/jjsite/include/css/searchfield.css);
     </style>
     <link rel="shortcut icon" href="https://ats-sb.adobe.com/jjsite/include/images/jj1.ico">
+    <script>
+        function checkoutNow(){
+            digitalData = {
+            event:"checkout",
+            page: {
+                pageName: "Checkout:Shopping Cart",
+                pageType: "Cart",
+                siteSection: "Checkout",
+                server: "Geometrixx Clothiers Site"
+            },
+            linkName:"Checkout Now!",
+            linkPageName:"Checkout:Shopping Cart",
+            cart:{
+
+                items: [{
+                productID: "200233",
+                productName: "Hooded Sweater",
+                productTotalRevenue: "2500.00",
+			    productTotalUnits: "1"
+            },
+            {
+                productID: "200240",
+                productName: "Corduroy Blazer",
+                productTotalRevenue: "3000.00",
+			    productTotalUnits: "1"
+            },
+            {
+                productID: "100244",
+                productName: "Front-Zip Ski Jacket",
+                productTotalRevenue: "4000.00",
+			    productTotalUnits: "1"
+            }
+        ]
+
+            }
+        };
+        }
+    </script>
     <script src="https://assets.adobedtm.com/9db2f886d215/3bd61d503d8d/launch-348dd8704d7c-development.min.js" async></script>
 </head>
 
@@ -256,7 +294,7 @@
 
             <div>
                 <form action="shipping1.html">
-                    <input type="submit" value="CHECKOUT NOW!" class="button">
+                    <input type="submit" onclick="checkoutNow()" value="CHECKOUT NOW!" class="button">
                 </form>
             </div>
 
